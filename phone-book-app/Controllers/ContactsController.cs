@@ -97,12 +97,15 @@ namespace phone_book_app.Controllers
             //contacts.Add(value);
         }
 
-        // PUT api/contacts/5
-        public void Put(int id, [FromBody]Contact value)
+        // PUT api/contacts
+        public void Put(Contact value)
         {
-            //just replace for now...
-            contacts.RemoveAt(id - 1);
-            contacts.Add(value);
+            var contact = contacts.SingleOrDefault(c => c.Id == value.Id);
+            contact.FirstName = value.FirstName;
+            contact.LastName = value.LastName;
+            contact.CompanyName = value.CompanyName;
+            contact.EmailAddress = value.EmailAddress;
+            contact.Twitter = value.Twitter;
         }
 
         // DELETE api/contacts/5

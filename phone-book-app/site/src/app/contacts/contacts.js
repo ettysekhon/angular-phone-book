@@ -51,14 +51,25 @@ angular.module('contacts').config(['$routeProvider', 'config', function ($routeP
     .controller('ContactController', ['$scope', 'contacts', '$location', '$route', 'config', function ($scope, contacts, $location, $route, config) {
 
         $scope.hasSaved = false;
+        $scope.saveError = false;
+
         var contact = contacts.get({ id: $route.current.params.id });
         $scope.contact = contact;
 
         $scope.regularExpressions = config.regularExpressions;
 
         $scope.save = function (contact, contactForm) {
+            $scope.hasSaved = false;
+            $scope.saveError = false;
+
             if (contactForm.$valid) {
-                $scope.hasSaved = true;
+                contacts.save(contact, function(response) {
+                    console.log('contact saved');
+                    $scope.hasSaved = true
+                }, function (response) {
+                    console.log('contact save failed');
+                    $scope.saveError = true;
+                });
             }
         }
 

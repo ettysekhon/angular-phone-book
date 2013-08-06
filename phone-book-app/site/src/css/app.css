@@ -1,0 +1,197 @@
+﻿/*media queries*/
+@media (min-width: 785px) {
+  .contact-img {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 784px) {
+  .contact-img {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 580px) {
+  .contact-card {
+    display: none;
+  }
+}
+.view {
+  padding: 25px;
+}
+.box-shadow {
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/*contact images*/
+.contact-img-base {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #eeeeee;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+  padding: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.contacts-img {
+  height: 85px;
+  width: 85px;
+  margin-left: 2%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #eeeeee;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+  padding: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.contact-img {
+  height: 185px;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #eeeeee;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 2%;
+  padding: 4px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/*contact*/
+.contact {
+  background-color: #eeeeee;
+  height: 100px;
+  margin-bottom: 10px;
+  border: 2px solid;
+  border-color: #777;
+  color: #777;
+  vertical-align: middle;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.contact.active {
+  background-color: #7dc67d;
+  color: white;
+}
+.contact:hover {
+  background-color: #7dc67d;
+  color: white;
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -ms-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  cursor: pointer;
+}
+/*contact card on contact details*/
+.contact-card {
+  height: 185px;
+  min-width: 300px;
+  border: 1px solid #eeeeee;
+  -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+  float: left;
+  padding: 4px;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-image: url('../assets/textured_paper.png');
+}
+/*helpers*/
+.margin-top-small {
+  margin-top: 20px;
+}
+.margin-bottom-small {
+  margin-bottom: 20px;
+}
+/*validation*/
+input.ng-dirty.ng-invalid {
+  background-color: #f9f2f4;
+}
+/*view transition animation*/
+.view-enter {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  -ms-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+}
+.view-leave {
+  -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  -moz-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  -ms-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+}
+.view-enter {
+  opacity: 0;
+  left: 20px;
+  width: 100%;
+  position: absolute;
+}
+.view-enter.view-enter-active {
+  opacity: 1;
+  left: 0;
+}
+.view-leave {
+  opacity: 1;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+.view-leave.view-leave-active {
+  opacity: 0;
+  left: -20px;
+}
+
+/* Homepage masthead
+-------------------------------------------------- */
+
+.bs-masthead {
+  position: relative;
+  padding: 30px 15px;
+  text-align: center;
+}
+.bs-masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+}
+
+/* Download button */
+.bs-masthead .btn-outline {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 18px 24px;
+  font-size: 21px;
+}
+/* Homepage button */
+.btn-outline {
+  color: #fff;
+  background-color: #7dc67d;
+  border-color: #cdbfe3;
+}

@@ -56,8 +56,6 @@ angular.module('contacts').config(['$routeProvider', 'config', function ($routeP
 
         $scope.regularExpressions = config.regularExpressions;
 
-        console.log(config.regularExpressions);
-
         $scope.save = function (contact, contactForm) {
             if (contactForm.$valid) {
                 $scope.hasSaved = true;

@@ -169,9 +169,7 @@ input.ng-dirty.ng-invalid {
   left: -20px;
 }
 
-/* Homepage masthead
--------------------------------------------------- */
-
+/*about page*/
 .bs-masthead {
   position: relative;
   padding: 30px 15px;
@@ -181,15 +179,12 @@ input.ng-dirty.ng-invalid {
   font-size: 50px;
   line-height: 1;
 }
-
-/* Download button */
 .bs-masthead .btn-outline {
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 18px 24px;
   font-size: 21px;
 }
-/* Homepage button */
 .btn-outline {
   color: #fff;
   background-color: #7dc67d;

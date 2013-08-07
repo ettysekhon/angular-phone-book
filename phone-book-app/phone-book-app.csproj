@@ -168,7 +168,6 @@
     <Content Include="site\lib\bootstrap\js\bootstrap.min.js" />
     <Content Include="site\lib\jquery\jquery.min.js" />
     <Content Include="site\lib\respond\respond.min.js" />
-    <Content Include="site\lib\underscore\underscore-min.js" />
     <Content Include="site\src\app\about\about.js" />
     <Content Include="site\src\app\about\about.tmpl.html" />
     <Content Include="site\src\app\app.js" />
@@ -186,7 +185,6 @@
     <Content Include="site\src\common\resources\contacts.js" />
     <Content Include="site\src\common\resources\lookups.js" />
     <Content Include="site\src\common\services\state.js" />
-    <Content Include="site\src\common\services\underscore.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

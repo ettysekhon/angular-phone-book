@@ -22,7 +22,6 @@
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
 }
-
 /*contact images*/
 .contact-img-base {
   background: rgba(255, 255, 255, 0.8);
@@ -140,6 +139,10 @@ input.ng-dirty.ng-invalid {
   -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
   -ms-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.7s;
+  opacity: 0;
+  left: 20px;
+  width: 100%;
+  position: absolute;
 }
 .view-leave {
   -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
@@ -147,10 +150,8 @@ input.ng-dirty.ng-invalid {
   -o-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
   -ms-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
   transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
-}
-.view-enter {
-  opacity: 0;
-  left: 20px;
+  opacity: 1;
+  left: 0;
   width: 100%;
   position: absolute;
 }
@@ -158,17 +159,10 @@ input.ng-dirty.ng-invalid {
   opacity: 1;
   left: 0;
 }
-.view-leave {
-  opacity: 1;
-  left: 0;
-  width: 100%;
-  position: absolute;
-}
 .view-leave.view-leave-active {
   opacity: 0;
   left: -20px;
 }
-
 /*about page*/
 .bs-masthead {
   position: relative;

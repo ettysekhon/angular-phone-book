@@ -3,7 +3,7 @@
 @invalid-pink:  #f9f2f4;
 
 /*media queries*/
- @media (min-width: 785px) {
+@media (min-width: 785px) {
   .contact-img {
     margin-left: 15px;
   }
@@ -120,27 +120,22 @@ input.ng-dirty.ng-invalid {
 
 /*view transition animation*/
 .view-enter {
-  .transition
-}
-.view-leave {
-  .transition(0.1s)
-}
-.view-enter {
+  .transition;
   opacity:0;
   left:20px;
+  width:100%;
+  position:absolute;
+}
+.view-leave {
+  .transition(0.1s);
+  opacity:1;
+  left:0;
   width:100%;
   position:absolute;
 }
 .view-enter.view-enter-active {
   opacity:1;
   left:0;
-}
-
-.view-leave {
-  opacity:1;
-  left:0;
-  width:100%;
-  position:absolute;
 }
 .view-leave.view-leave-active {
   opacity:0;
